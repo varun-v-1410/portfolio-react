@@ -4,13 +4,12 @@ import Link from 'next/link';
 import { IoHomeOutline, IoCodeSlash, IoDocumentTextOutline, IoMenu, IoClose } from "react-icons/io5";
 import { PiCertificate } from 'react-icons/pi';
 import { usePathname } from 'next/navigation';
-import { useEffect } from 'react';
 
 export default function NavBar() {
 
     const pth = usePathname();
 
-    function setActiveLinks(path:String) {
+    function setActiveLinks(path:string) {
         return path === pth ? 'active' : 'non-active';
     }
     
